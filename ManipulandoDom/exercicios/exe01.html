@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button class="btn" id="btn-click" onclick="gerarQuadrado()">
+            Clica aqui
+        </button>
+    </div>
+
+    <script>
+
+        //////////////////////////////////////////////////////////
+        /*
+        1º exercício
+        Crie um botão que ao ser clicado cria um novo elemento em 
+        tela com a forma de um quadrado
+        vermelho com 100px de altura e largura. 
+        Sempre que o botão for clicado um novo quadrado deve
+        aparecer na tela.
+        */
+
+        var btn =  document.querySelector('#btn-click');
+
+        btn.style.color = '#fff';
+        btn.style.width = '100';
+        btn.style.height = '100';
+
+
+        function gerarQuadrado(){
+            let boxElement = document.createElement("div");
+            boxElement.style.width = '100px';
+            boxElement.style.height = '100px';
+            boxElement.style.backgroundColor = '#f00';
+            boxElement.style.margin = '10';
+        
+
+        // Adciona a classe .btn na div criada
+
+        boxElement.classList.add('btn');
+
+        document.body.appendChild(boxElement);
+
+    }
+
+    </script>
+</body>
+</html>

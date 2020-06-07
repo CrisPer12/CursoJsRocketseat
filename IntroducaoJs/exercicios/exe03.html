@@ -1,0 +1,16 @@
+<script>
+
+    //////////// EXERCICIO 3 /////////////
+
+    //Escreva uma função que verifique se o vetor de habilidades 
+    //passado possui a habilidade "Javascript"
+    //e retorna um booleano true/false caso exista ou não.
+
+    function habilidade(skill, find) {
+        return (skill.indexOf(find) >= 0);
+      }
+      
+      var skill = ['javascript'];
+      var resultado = habilidade(skill, 'Angular');
+      console.log(resultado);
+</script>
